@@ -320,31 +320,31 @@ local function press(e)
                     spellicon.scaleMode = true
                     spellicon.width = cf.sliderpercent2
                     spellicon.height = cf.sliderpercent2
-                else
-                    local borde = block:createBlock({id = string.format("%s", slot)})
-                    borde.flowDirection = "top_to_bottom"
-                    borde.autoWidth = true
-                    borde.autoHeight = true
-                    borde.paddingAllSides = 0
-                    borde.borderAllSides = cf.slider
-                    local border = borde:createThinBorder():createThinBorder({id = "icon"})
-                    local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
-                    darkness.autoWidth = true
-                    darkness.autoHeight = true
-                    darkness.minWidth = cf.sliderpercent2
-                    darkness.minHeight = cf.sliderpercent2
-                    border.autoWidth = true
-                    border.autoHeight = true
-                    border.parent.autoWidth = true
-                    border.parent.autoHeight = true
-                    border.parent.borderAllSides = 0
-                    border.paddingAllSides = 2
-                    border.borderAllSides = 0
-                    --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
-                    local slotn = border:createLabel{text = tostring(slot)}
-                    slotn.color = tes3ui.getPalette("normal_color")
-                    slotn.absolutePosAlignX = 0.5
-                    slotn.absolutePosAlignY = 0.4
+                -- else
+                --     local borde = block:createBlock({id = string.format("%s", slot)})
+                --     borde.flowDirection = "top_to_bottom"
+                --     borde.autoWidth = true
+                --     borde.autoHeight = true
+                --     borde.paddingAllSides = 0
+                --     borde.borderAllSides = cf.slider
+                --     local border = borde:createThinBorder():createThinBorder({id = "icon"})
+                --     local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
+                --     darkness.autoWidth = true
+                --     darkness.autoHeight = true
+                --     darkness.minWidth = cf.sliderpercent2
+                --     darkness.minHeight = cf.sliderpercent2
+                --     border.autoWidth = true
+                --     border.autoHeight = true
+                --     border.parent.autoWidth = true
+                --     border.parent.autoHeight = true
+                --     border.parent.borderAllSides = 0
+                --     border.paddingAllSides = 2
+                --     border.borderAllSides = 0
+                --     --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
+                --     local slotn = border:createLabel{text = tostring(slot)}
+                --     slotn.color = tes3ui.getPalette("normal_color")
+                --     slotn.absolutePosAlignX = 0.5
+                --     slotn.absolutePosAlignY = 0.4
                 end
             end
         block:getTopLevelParent():updateLayout()
@@ -765,31 +765,31 @@ local function simulate()
                     spellicon.scaleMode = true
                     spellicon.width = cf.sliderpercent2
                     spellicon.height = cf.sliderpercent2
-                else
-                    local borde = block:createBlock({id = string.format("%s", slot)})
-                    borde.flowDirection = "top_to_bottom"
-                    borde.autoWidth = true
-                    borde.autoHeight = true
-                    borde.paddingAllSides = 0
-                    borde.borderAllSides = cf.slider
-                    local border = borde:createThinBorder():createThinBorder({id = "icon"})
-                    local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
-                    darkness.autoWidth = true
-                    darkness.autoHeight = true
-                    darkness.minWidth = cf.sliderpercent2
-                    darkness.minHeight = cf.sliderpercent2
-                    border.autoWidth = true
-                    border.autoHeight = true
-                    border.parent.autoWidth = true
-                    border.parent.autoHeight = true
-                    border.parent.borderAllSides = 0
-                    border.paddingAllSides = 2
-                    border.borderAllSides = 0
-                    --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
-                    local slotn = border:createLabel{text = tostring(slot)}
-                    slotn.color = tes3ui.getPalette("normal_color")
-                    slotn.absolutePosAlignX = 0.5
-                    slotn.absolutePosAlignY = 0.4
+                -- else
+                --     local borde = block:createBlock({id = string.format("%s", slot)})
+                --     borde.flowDirection = "top_to_bottom"
+                --     borde.autoWidth = true
+                --     borde.autoHeight = true
+                --     borde.paddingAllSides = 0
+                --     borde.borderAllSides = cf.slider
+                --     local border = borde:createThinBorder():createThinBorder({id = "icon"})
+                --     local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
+                --     darkness.autoWidth = true
+                --     darkness.autoHeight = true
+                --     darkness.minWidth = cf.sliderpercent2
+                --     darkness.minHeight = cf.sliderpercent2
+                --     border.autoWidth = true
+                --     border.autoHeight = true
+                --     border.parent.autoWidth = true
+                --     border.parent.autoHeight = true
+                --     border.parent.borderAllSides = 0
+                --     border.paddingAllSides = 2
+                --     border.borderAllSides = 0
+                --     --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
+                --     local slotn = border:createLabel{text = tostring(slot)}
+                --     slotn.color = tes3ui.getPalette("normal_color")
+                --     slotn.absolutePosAlignX = 0.5
+                --     slotn.absolutePosAlignY = 0.4
                 end
             end
         block:getTopLevelParent():updateLayout()
@@ -959,31 +959,31 @@ local block = menu:createRect({id = "Spa_HotQuick", color = {0.0, 0.0, 0.0}})
                 spellicon.scaleMode = true
                 spellicon.width = cf.sliderpercent2
                 spellicon.height = cf.sliderpercent2
-        else
-            local borde = block:createBlock({id = string.format("%s", slot)})
-            borde.flowDirection = "top_to_bottom"
-            borde.autoWidth = true
-            borde.autoHeight = true
-            borde.paddingAllSides = 0
-            borde.borderAllSides = cf.slider
-            local border = borde:createThinBorder():createThinBorder({id = "icon"})
-            local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
-            darkness.autoWidth = true
-            darkness.autoHeight = true
-            darkness.minWidth = cf.sliderpercent2
-            darkness.minHeight = cf.sliderpercent2
-            border.autoWidth = true
-            border.autoHeight = true
-            border.parent.autoWidth = true
-            border.parent.autoHeight = true
-            border.parent.borderAllSides = 0
-            border.paddingAllSides = 2
-            border.borderAllSides = 0
-            --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
-            local slotn = border:createLabel{text = tostring(slot)}
-            slotn.color = tes3ui.getPalette("normal_color")
-            slotn.absolutePosAlignX = 0.5
-            slotn.absolutePosAlignY = 0.4
+        -- else
+        --     local borde = block:createBlock({id = string.format("%s", slot)})
+        --     borde.flowDirection = "top_to_bottom"
+        --     borde.autoWidth = true
+        --     borde.autoHeight = true
+        --     borde.paddingAllSides = 0
+        --     borde.borderAllSides = cf.slider
+        --     local border = borde:createThinBorder():createThinBorder({id = "icon"})
+        --     local darkness = border:createRect({id = "darkness", color = {0.0, 0.0, 0.0}})
+        --     darkness.autoWidth = true
+        --     darkness.autoHeight = true
+        --     darkness.minWidth = cf.sliderpercent2
+        --     darkness.minHeight = cf.sliderpercent2
+        --     border.autoWidth = true
+        --     border.autoHeight = true
+        --     border.parent.autoWidth = true
+        --     border.parent.autoHeight = true
+        --     border.parent.borderAllSides = 0
+        --     border.paddingAllSides = 2
+        --     border.borderAllSides = 0
+        --     --border:createImage({path = "Icons\\Spammer\\qhicon.dds"})
+        --     local slotn = border:createLabel{text = tostring(slot)}
+        --     slotn.color = tes3ui.getPalette("normal_color")
+        --     slotn.absolutePosAlignX = 0.5
+        --     slotn.absolutePosAlignY = 0.4
         end
     end
     if tes3.isLuaModActive("Virnetch\\HotKeys") then
