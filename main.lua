@@ -570,6 +570,9 @@ local function register()
     for slot = 1, 9 do
         local quickKey = tes3.getQuickKey({slot = slot})
         local block = menu:findChild(string.format("%s", slot))
+        if not block then
+            return
+        end
         local cursor = tes3ui.findHelpLayerMenu("CursorIcon")
         local c
         if cursor then
@@ -597,6 +600,9 @@ local function tooltips()
         for slot = 1, 9 do
             local quickKey = tes3.getQuickKey({slot = slot})
             local block = menu:findChild(string.format("%s", slot))
+            if not block then
+                return
+            end
             block:register(tes3.uiEvent.help, function()
                 if quickKey and quickKey.item then
                     tes3ui.createTooltipMenu({ item = quickKey.item, itemData = quickKey.itemData})
@@ -1049,4 +1055,3 @@ local function initialized()
     end
     print("["..mod.name..", by Spammer] "..mod.ver.." Initialized!")
 end event.register("initialized", initialized)
-
